@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BitsNoted</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>BitsNoted</h1>
+    <p>Note the bits and bytes quickly</p>
+  </header>
+
+  <!-- add note -->
+  <section id="noteform">
+    <h2>Add / Edit Note</h2>
+    <form id="addn">
+
+      <input type="hidden" id="nid">
+
+      <label for="ttl">Title:</label>
+      <input type="text" id="ttl" placeholder="enter note title" required>
+
+      <label for="cnt">Content:</label>
+      <textarea id="cnt" placeholder="write here..." required></textarea>
+
+      <label for="cat">Category:</label>
+      <select id="cat">
+        <option value="CS">CS</option>
+        <option value="School">School</option>
+        <option value="Personal">Personal</option>
+        <option value="Misc">Misc</option>
+      </select>
+
+      <label for="tags">Tags (comma sep):</label>
+      <input type="text" id="tags" placeholder="eg: project, urgent">
+
+      <button type="submit" id="savbtn">Add Note</button>
+    </form>
+  </section>
+
+  <!-- filter and search -->
+  <section id="fil">
+    <h2>Manage Notes</h2>
+    <select id="filcat">
+      <option value="All">All</option>
+      <option value="CS">CS</option>
+      <option value="School">School</option>
+      <option value="Personal">Personal</option>
+      <option value="Misc">Misc</option>
+    </select>
+
+    <input type="text" id="srch" placeholder="search notes...">
+  </section>
+
+  <!-- notes -->
+  <section id="nts">
+    <h2>Your Notes</h2>
+    <div id="ntscon"></div>
+  </section>
+
+  <!-- popup view -->
+  <div id="popup" class="hide">
+    <div class="popbox">
+      <h3 id="popttl"></h3>
+      <p id="popcnt"></p>
+      <button id="popclose">Close</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

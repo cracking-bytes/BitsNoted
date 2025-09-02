@@ -1,2 +1,4 @@
 /.venv
 src/nvm.py
+/.vscode
+/notes

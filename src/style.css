@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(30, 30, 30);
+    color: #b0d5ff;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    color: #0077ff;
+    font-size: 250%;
+}
+
+header p {
+    color: #b0d5ff;
+}
+
+section h2 {
+    margin-bottom: 10px;
+    color: #0077ff;
+}
+
+#noteform,
+#fil {
+    background: rgb(46, 46, 46);
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 102, 255, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, textarea, select, button {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #444;
+    background: #222;
+    color: #b0d5ff;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    background: #0077ff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.15s;
+}
+
+button:hover {
+    background: #b0d5ff;
+    color: black;
+}
+
+#ntscon {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+.notecard h3 {
+    margin-bottom: 5px;
+    color: #b0d5ff;
+}
+
+.notecard {
+    background: rgb(46, 46, 46);
+    padding: 15px;
+    border-radius: 8px;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    min-height: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.notecard .btnrow {
+    display: flex;
+    gap: 8px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+.tagz {
+    font-size: 0.8rem;
+    margin: 3px;
+    padding: 3px 6px;
+    background: #333;
+    border-radius: 4px;
+    display: inline-block;
+    color: #fff;
+}
+
+/* cat colors */
+.category {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+    color: white;
+    min-width: 60px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.category.CS {
+    background: #54a4ff;
+}
+
+.category.School {
+    background: #2ecc71;
+}
+
+.category.Personal {
+    background: #e67e22;
+}
+
+.category.Misc {
+    background: #b94949;
+}
+
+/* btns */
+.delbtn, .pinbtn, .edtbtn, .vwbtn {
+    position: absolute;
+    top: 10px;
+    padding: 5px 8px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    font-size: 0.8rem;
+}
+
+.delbtn {
+    right: 10px;
+    background: #f73333;
+}
+
+.delbtn:hover {
+    background: #cc0000;
+}
+
+.pinbtn {
+    right: 60px;
+    background: #ffaa00;
+}
+
+.pinbtn:hover {
+    background: #e69500;
+}
+
+.edtbtn {
+    right: 110px;
+    background: #3399ff;
+}
+
+.edtbtn:hover {
+    background: #0077ff;
+}
+
+.vwbtn {
+    right: 160px;
+    background: #666;
+}
+
+.vwbtn:hover {
+    background: #444;
+}
+
+/* popup */
+#popup.hide {
+    display: none;
+}
+
+#popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popbox {
+    background: #222;
+    color: #b0d5ff;
+    padding: 10px;
+    border-radius: 8px;
+    max-width: 500px;
+}
+
+.popbox h3 {
+    color: #0077ff;
+    margin-bottom: 20px;
+}
+
+#popclose {
+    margin-top: 20px;
+}
